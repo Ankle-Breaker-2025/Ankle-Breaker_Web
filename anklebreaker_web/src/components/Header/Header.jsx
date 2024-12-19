@@ -22,7 +22,7 @@ function Header() {
   return (
     <div className={`header ${isHomePage ? '' : 'default-header'}`}>
       <div className="logo">
-        <img src="/public/AnkleBreaker.svg" alt="anklebreaker logo"/>
+        <img src="/AnkleBreaker.svg" alt="anklebreaker logo"/>
         <NavLink to="/" end className="ankleBreaker">ANKLE BREAKER</NavLink>
       </div>
 
