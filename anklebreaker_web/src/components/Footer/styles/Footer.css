@@ -1,0 +1,98 @@
+.footer{
+  background-color: black;
+  width: 100%;
+  min-height: 200px;
+  color: white;
+  padding: 50px 70px;
+  font-weight: 600;
+  line-height: 30px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.footer .contents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .sns{
+  margin: 10px 0px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer .icon-instagram {
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+  padding: 7px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 800;
+}
+
+.footer .icon-youtube {
+  background-color: red;
+  padding: 7px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 800;
+}
+
+.footer .info {
+  color: white;
+}
+
+.footer .logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .logo img {
+  max-width: 250px;
+}
+
+.footer .license {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+/* 패드 화면 */
+@media (max-width: 1080px){
+  .footer{
+    padding: 50px 50px;
+  }
+  
+  .footer .logo img {
+    max-width: 200px;
+  }  
+}
+
+/* 휴대폰 화면 */
+@media (max-width: 450px){
+  .footer{
+    text-align: center;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .contents{
+    justify-content: center;
+  }
+
+  .footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .footer .sns{
+    justify-content: center;
+  }
+}

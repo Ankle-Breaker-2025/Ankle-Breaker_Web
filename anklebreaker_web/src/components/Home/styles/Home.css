@@ -1,0 +1,147 @@
+.home {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home .banner{
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 90vh;
+  z-index: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 어두운 투명 레이어 */
+.home .banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  pointer-events: none; /* 클릭 이벤트를 무시 */
+  z-index: 1;
+}
+
+.home .banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+
+.home .slogan {
+  font-size: 50px;
+}
+
+.home .go-training {
+  all: unset;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.home .section-divider {
+  position: relative;
+  background-color:#E9E9E9;
+  height: 50px;
+  width: 100%;
+}
+
+.home .triangle {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #E9E9E9;
+}
+
+.home .philosophy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #191919 60%,#000000
+  );
+  color: white;
+  padding: 30px;
+}
+
+.home .section-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.home .section-description {
+  font-size: 15px;
+  text-align: center;
+}
+
+.home .section-contents {
+  display: flex;
+  margin: 40px 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .philosophy-card {
+  background-color: #2B2B2B;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px;
+  flex-basis: 350px;
+  flex-grow: 1;
+}
+
+.home .card-philosophy {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.home .card-description {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/* 패드 화면 */
+@media (max-width: 1080px){
+
+}
+
+/* 휴대폰 화면 */
+@media (max-width: 450px){
+  .home .section-contents {
+    margin: 10px 0px;
+  }
+
+  .home .philosophy-card {
+    padding: 20px;
+    margin: 20px 5px;
+  }
+
+  .home .card-philosophy {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 5px 20px 0px;
+  }
+  
+  .home .card-description {
+    font-size: 14px;
+  }
+}
