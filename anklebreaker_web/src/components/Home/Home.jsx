@@ -1,6 +1,7 @@
 import './styles/Home.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import philosophyData from './data.json';
 
 function Home() {
   const bucketUrl = import.meta.env.VITE_BUCKET_URL;
@@ -8,7 +9,6 @@ function Home() {
 
   const [bannerUrl, setBannerUrl] = useState('');
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
-  const [philosophyData, setPhilosophyData] = useState([]);
 
   // 화면 크기 변경 감지
   useEffect(() => {
@@ -31,13 +31,6 @@ function Home() {
 
     setBannerUrl(url);
   }, [isMobile, bucketUrl]);
-
-  useEffect(() => {
-    fetch('/src/components/Home/data.json')
-    .then((response) => response.json())
-    .then((data) => setPhilosophyData(data.philosophy))
-    .catch((error) => console.error('데이터 로딩 실패:', error));
-  }, []);
 
   // 로딩 상태 처리
   if (!bannerUrl) {
@@ -72,7 +65,7 @@ function Home() {
         <div className="section-description">전태풍 앵클브레이커는 다음의 4가지 원칙에 따라 농구를 가르칩니다.</div>
 
         <div className="section-contents">
-          {philosophyData.map((item, index) => (
+          {philosophyData.philosophy.map((item, index) => (
             <div className="philosophy-card" key={index}>
               <div className="card-philosophy">{item.title}</div>
               <div className="card-description">
