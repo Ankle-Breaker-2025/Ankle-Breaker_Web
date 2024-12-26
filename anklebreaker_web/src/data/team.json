@@ -1,0 +1,48 @@
+{
+  "U18": {
+    "players": [],
+    "pictures": [],
+    "matches": [],
+    "achievements": []
+  },
+  "U15": {
+    "players": [
+      { "name": "김재현", "number": 6, "position": "PG" },
+      { "name": "문석현", "number": 41, "position": "PG" },
+      { "name": "송연서", "number": 9, "position": "PG" },
+      { "name": "박은철", "number": 0, "position": "PG" },
+      { "name": "정찬우", "number": 13, "position": "PG" },
+      { "name": "조연우", "number": 22, "position": "PG" },
+      { "name": "최대현", "number": 33, "position": "PG" }
+    ],
+    "pictures": [
+      "team/U15/U15_1.webp",
+      "team/U15/U15_2.webp",
+      "team/U15/U15_3.webp",
+      "team/U15/U15_4.webp"
+    ],
+    "matches": [
+      {
+        "datetime": "2024. 12. 25 14:00",
+        "location": "전태풍 앵클브레이커 체육관",
+        "match": "크리스마스 청소년 농구대회"
+      }
+    ],
+    "achievements": [
+      { "datetime": "2024. 12. 25", "match": "최고 멋있는 팀에게 주는 상" },
+      { "datetime": "2024. 12. 25", "match": "최고 잘한 팀에게 주는 상" }
+    ]
+  },
+  "U12": {
+    "players": [],
+    "pictures": [],
+    "matches": [],
+    "achievements": []
+  },
+  "U10": {
+    "players": [],
+    "pictures": [],
+    "matches": [],
+    "achievements": []
+  }
+}
