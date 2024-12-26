@@ -34,6 +34,7 @@
 
 .team-button.selected {
   background-color: #e0e0e0;
+  color: black;
 }
 
 .team-list {
@@ -62,6 +63,7 @@
 .player .player-name{
   font-size: 20px;
   font-weight: 600;
+  color: black;
 }
 
 .team-pic{
@@ -131,6 +133,7 @@
   border-radius: 10px;
   width: 100%;
   height: 100%;
+  color: black;
 }
 
 .match .match-card {
