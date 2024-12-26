@@ -1,0 +1,8 @@
+{
+  "uniforms":[
+    {"name":"농구 유니폼", "price":42000, "image":"uniform_1.webp"},
+    {"name":"농구 유니폼 ver.2", "price":42000, "image":"uniform_2.webp"},
+    {"name":"긴팔 슈팅 져지", "price":42000, "image":"uniform_3.webp"},
+    {"name":"반팔 흰색 셔츠", "price":42000, "image":"uniform_4.webp"}
+  ]
+}
