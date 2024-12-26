@@ -44,6 +44,11 @@
   box-sizing: border-box;
 }
 
+.team-list h2{
+  font-size: 25px;
+  font-weight: 800;
+}
+
 .player-list {
   width: 100%;
   display: flex;
@@ -53,6 +58,7 @@
 }
 
 .player-list .player{
+  color: black;
   background-color: #e0e0e0;
   width: 11%;
   padding: 5px;
@@ -63,7 +69,6 @@
 .player .player-name{
   font-size: 20px;
   font-weight: 600;
-  color: black;
 }
 
 .team-pic{
