@@ -1,0 +1,75 @@
+.staff-card {
+  width: 400px;
+  height: 400px;
+  background-size: 1200px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  margin: 10px 0px;
+
+}
+
+.staff-card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-card .card-title {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.staff-card .line {
+  background-color: white;
+  height: 1px;
+  width: 60%;
+  margin-left: 10px;
+}
+
+.staff-card .card-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.staff-card .staff{
+  text-align: center;
+}
+
+.staff .name{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+}
+
+.name .korName{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.name .engName{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.staff .position{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+@media (max-width: 450px){
+  .staff-card {
+    width: 300px;
+  }
+}

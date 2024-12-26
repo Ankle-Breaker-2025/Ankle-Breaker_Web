@@ -1,7 +1,7 @@
 import './styles/Footer.css';
 import { useState, useEffect } from 'react';
 import { FaInstagram, FaYoutube } from 'react-icons/fa';
-import companyData from './data.json';
+import companyData from '../../data/company.json';
 
 function Footer() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);

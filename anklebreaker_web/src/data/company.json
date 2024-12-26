@@ -5,6 +5,12 @@
     "business_registration_number": "141-87-03051",
     "contact_number": "070-7757-0909",
     "email": "info@anklebreaker.co.kr",
-    "address": "경기도 용인시 기흥구 지삼로 17번길 7-2"
+    "address": "경기도 용인시 기흥구 지삼로 17번길 7-2",
+    "images": [
+      "about/앵클브레이커_1.webp",
+      "about/앵클브레이커_2.webp",
+      "about/체육관이미지_3.webp",
+      "about/체육관이미지_4.webp"
+    ]
   }
 }
