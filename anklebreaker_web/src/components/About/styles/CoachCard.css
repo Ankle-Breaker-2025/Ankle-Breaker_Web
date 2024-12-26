@@ -1,0 +1,169 @@
+.coach-card {
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.coach-card.is-flipped .card-inner {
+  transform: rotateY(180deg); /* 뒤집기 */
+}
+
+.card-front,
+.card-back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-front {
+  background-image: url('/public/images/Background.webp');
+  background-size: 1200px;
+  z-index: 2;
+}
+
+.card-front .card-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card-front img{
+  position: absolute;
+  width: 80%;
+  height: 400px;
+  z-index: 0;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.card-front .info{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  padding: 25px 30px;
+  box-sizing: border-box;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.info .position{
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.info .divider{
+  height: 65%;
+  width: 1px;
+  background-color: white;
+}
+
+.info .name {
+  text-align: end;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* 카드 뒷면 */
+.card-back {
+  z-index: 1;
+  background-image: url('/public/images/Background.webp');
+  background-size: 1200px;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  gap: 10px;
+  /* overflow: hidden; */
+}
+
+.card-back .info-back{
+  z-index: 2;
+  padding: 30px;
+}
+
+.card-back .coach-name{
+  display: flex;
+  gap: 8px;
+  width: fit-content;
+  align-items: end;
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
+}
+
+.coach-name .name{
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.coach-name .eng-name{
+  font-size: 17px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.card-back .section-title{
+  font-size: 13px;
+  width: fit-content;
+  height: 30px;
+  padding: 0px 7px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: red;
+  border-radius: 5px;
+  vertical-align: center;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+}
+
+.card-back .section-contents{
+  font-size: 14px;
+  text-align: left;
+  line-height: 25px;
+  /* border:1px solid red; */
+}
+
+.card-back img{
+  position: absolute;
+  right:0;
+  bottom:0;
+  width: 80%;
+  height: 320px;
+  z-index: 0;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0.5;
+}
+
+@media (max-width: 1080px){
+
+}
+
+@media (max-width: 450px){
+  .coach-card {
+    width: 300px;
+  }
+}

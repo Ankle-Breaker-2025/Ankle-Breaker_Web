@@ -1,0 +1,53 @@
+{
+  "coach": [
+    {
+      "name": "전태풍",
+      "sub_name": "Tony Akins",
+      "position": "MAIN COACH",
+      "career_player": [
+        "09-20, KBL 프로 농구선수 활동",
+        "2010, KBL 베스트5 수상",
+        "2013, KBL 어시스트상 수상"
+      ],
+      "career_coach": [
+        "18-19 전주 KCC 이지스 플레잉 코치"
+      ],
+      "image": "about/main_coach.png",
+      "back_image": "about/main_coach_back.png",
+      "background_position":"0px 450px"
+    },
+    {
+      "name": "전정민",
+      "sub_name": "Jeon Jeongmin",
+      "position": "SUB COACH",
+      "career_player": [
+        "09-20, KBL 프로 농구선수 활동",
+        "2010, KBL 베스트5 수상",
+        "2013, KBL 어시스트상 수상"
+      ],
+      "career_coach": [
+        "18-19 전주 KCC 이지스 플레잉 코치"
+      ],
+      "image": "about/main_coach.png",
+      "back_image": "about/main_coach_back.png",
+      "background_position":"-300px 450px"
+    }
+  ],
+  "staff": [
+    {
+      "kor_name":"미나",
+      "eng_name":"Jane Turner",
+      "position":"Director"
+    },
+    {
+      "kor_name":"정제훈",
+      "eng_name":"Jeong Jaehoon",
+      "position":"Shuttle Driver"
+    },
+    {
+      "kor_name":"김우정",
+      "eng_name":"Kim Woojeong",
+      "position":"Web/App Developer"
+    }
+  ]
+}

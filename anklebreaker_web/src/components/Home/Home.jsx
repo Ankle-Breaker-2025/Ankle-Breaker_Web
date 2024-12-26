@@ -1,7 +1,7 @@
 import './styles/Home.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import philosophyData from './data.json';
+import philosophyData from '../../data/philosophy.json';
 
 function Home() {
   const bucketUrl = import.meta.env.VITE_BUCKET_URL;
