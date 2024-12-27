@@ -45,9 +45,8 @@ function Home() {
   return (
     <div className="home">
       {/* 배너 */}
-      <div 
-        className="banner"
-        style={{backgroundImage:`url(${bannerUrl}`}}>
+      <div className="banner">
+        <img src={bannerUrl} alt="배너 이미지" className="banner-image" loading="lazy"/>
         <div className="banner-content">
           <div className="slogan">FROM BASICS TO BRILLIANCE.</div>
           <button onClick={handleNavigation} className="go-training">커리큘럼 확인하기</button>
