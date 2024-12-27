@@ -7,10 +7,12 @@ import Training from './components/Training/Training.jsx';
 import Store from './components/Store/Store.jsx';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
