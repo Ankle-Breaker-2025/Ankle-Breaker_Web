@@ -125,6 +125,10 @@
   visibility: visible;
 }
 
+.modal-backdrop .navigation-button:focus{
+  outline: none;
+}
+
 .modal-backdrop .navigation-button.hidden {
   visibility: hidden;
 }
