@@ -45,13 +45,11 @@
 .uniform-card .uniform-name{
   font-weight: 800;
   font-size: 16px;
-  color: #272727;
   margin: 10px 0px;
 }
 
 .uniform-card .uniform-price{
   font-size: 15px;
-  color:black;
 }
 
 @media (max-width: 1080px){
