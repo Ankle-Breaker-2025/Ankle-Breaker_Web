@@ -8,8 +8,12 @@
           "level": "유치부",
           "color": "green",
           "details": {
-            "photos": ["13.jpg", "1.webp"],
-            "price": [80000],
+            "photos": [
+              "under7/under7_6.webp",
+              "under7/under7_3.webp",
+              "under7/under7_4.webp"
+            ],
+            "price": [90000],
             "schedule": [
               { "day": "토요일", "time": "12시 30분" }
             ]
@@ -25,8 +29,12 @@
           "level": "초급",
           "color": "#0067A3",
           "details": {
-            "photos": ["2.webp", "5.jpg"],
-            "price": [140000, 224000],
+            "photos": [
+              "lower_elementary/lower_elementary_3.webp", 
+              "lower_elementary/lower_elementary_2.webp",
+              "lower_elementary/lower_elementary_1.webp"
+            ],
+            "price": [144000, 256000],
             "schedule": [
               { "day": "토요일", "time": "11시 30분" }
             ]
@@ -42,8 +50,12 @@
           "level": "초급",
           "color": "#0067A3",
           "details": {
-            "photos":["3.webp", "16.png"],
-            "price": [140000, 224000],
+            "photos":[
+              "upper_elementary/B/upper_b_2.webp",
+              "upper_elementary/B/upper_b_4.webp",
+              "upper_elementary/B/upper_b_1.webp"
+            ],
+            "price": [144000, 256000],
             "schedule":[
               {"day": "일요일", "time": "14시"}
             ]
@@ -53,10 +65,13 @@
           "level": "중급",
           "color": "#E8A317",
           "details": {
-            "photos":["4.jpeg"],
-            "price": [140000, 224000],
+            "photos":[
+              "upper_elementary/I/1.webp",
+              "upper_elementary/I/2.webp",
+              "upper_elementary/I/3.webp"
+            ],
+            "price": [144000, 256000],
             "schedule":[
-              {"day": "일요일", "time": "13시"},
               {"day": "화요일", "time": "18시"}
             ]
           }
@@ -65,28 +80,38 @@
           "level": "상급",
           "color": "#F05650",
           "details": {
-            "photos":["6.jpg"],
-            "price": [140000, 224000],
+            "photos":[
+              "upper_elementary/A/1.webp",
+              "upper_elementary/A/2.webp",
+              "upper_elementary/A/3.webp"
+            ],
+            "price": [216000, 320000],
             "schedule":[
-              {"day": "일요일", "time": "17시"},
-              {"day": "금요일", "time": "16시"}
+              {"day": "금요일", "time": "15시 45분"},
+              {"day": "일요일", "time": "15시"},
+              {"day": "일요일", "time": "17시"}
             ]
           }
         }
       ]
     },
     {
-      "name": "초등 고학년 여성반",
+      "name": "초등 고학년 여자반",
       "engname": "Upper Elementary Girls' Group",
       "levels": [
         {
           "level": "초급",
           "color": "#0067A3",
           "details": {
-            "photos": ["18.jpg", "7.jpg"],
-            "price": [140000],
+            "photos":[
+              "upper_elementary/G/1.webp",
+              "upper_elementary/G/2.webp",
+              "upper_elementary/G/3.webp",
+              "upper_elementary/G/4.webp"
+            ],
+            "price": [144000],
             "schedule": [
-              { "day": "수요일", "time": "16시" }
+              { "day": "수요일", "time": "15시 45분" }
             ]
           }
         }
@@ -100,8 +125,12 @@
           "level": "초급",
           "color": "#0067A3",
           "details": {
-            "photos": ["11.jpg"],
-            "price": [140000, 224000],
+            "photos":[
+              "middle_high/B/4.webp",
+              "middle_high/B/2.webp",
+              "middle_high/B/3.webp"
+            ],
+            "price": [144000, 256000],
             "schedule": [
               { "day": "토요일", "time": "14시" }
             ]
@@ -111,8 +140,11 @@
           "level": "중급",
           "color": "#E8A317",
           "details": {
-            "photos": ["8.jpg"],
-            "price": [140000, 224000],
+            "photos":[
+              "middle_high/I/2.webp",
+              "middle_high/I/3.webp"
+            ],
+            "price": [144000, 256000],
             "schedule": [
               { "day": "화요일", "time": "20시" },
               { "day": "토요일", "time": "18시" }
@@ -123,10 +155,13 @@
           "level": "상급",
           "color": "#F05650",
           "details": {
-            "photos": ["20.webp"],
-            "price": [140000, 224000],
+            "photos":[
+              "middle_high/A/2.webp",
+              "middle_high/A/1.webp"
+            ],
+            "price": [216000, 320000],
             "schedule": [
-              { "day": "토요일", "time": "16시" }
+              { "day": "토요일", "time": "16시 30분" }
             ]
           }
         }
@@ -140,8 +175,11 @@
           "level": "초급",
           "color": "#0067A3",
           "details": {
-            "photos": ["9.jpg"],
-            "price": [140000, 224000],
+            "photos": [
+              "adult/1.webp",
+              "adult/3.webp"
+            ],
+            "price": [144000, 256000],
             "schedule": [
               { "day": "화요일", "time": "21시" }
             ]
@@ -151,10 +189,13 @@
           "level": "중급",
           "color": "#E8A317",
           "details": {
-            "photos": ["10.jpg"],
-            "price": [140000, 224000],
+            "photos": [
+              "adult/2.webp"
+            ],
+            "price": [144000, 256000],
             "schedule": [
-              { "day": "목요일", "time": "21시" }
+              { "day": "목요일", "time": "21시" },
+              { "day": "금요일", "time": "20시" }
             ]
           }
         },
@@ -162,8 +203,10 @@
           "level": "상급",
           "color": "#F05650",
           "details": {
-            "photos": ["15.webp"],
-            "price": [140000, 224000],
+            "photos": [
+              "adult/4.webp"
+            ],
+            "price": [144000, 256000],
             "schedule": [
               { "day": "수요일", "time": "21시" }
             ]
@@ -179,11 +222,34 @@
           "level": "초급",
           "color": "#0067A3",
           "details": {
-            "photos": ["14.jpg"],
-            "price": [140000],
+            "photos": [
+              "adult_w/3.webp",
+              "adult_w/1.webp",
+              "adult_w/2.webp"
+            ],
+            "price": [144000],
             "schedule": [
               { "day": "금요일", "time": "21시" }
             ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "개인레슨",
+      "engname": "Private Lesson",
+      "levels": [
+        {
+          "level": "개인",
+          "color": "#2DB400",
+          "details": {
+            "photos": [
+              "private/1.webp", 
+              "private/2.webp",
+              "private/3.webp"
+            ],
+            "price": [],
+            "schedule": []
           }
         }
       ]

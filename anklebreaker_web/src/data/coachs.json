@@ -12,8 +12,8 @@
       "career_coach": [
         "18-19 전주 KCC 이지스 플레잉 코치"
       ],
-      "image": "about/main_coach.png",
-      "back_image": "about/main_coach_back.png",
+      "image": "about/main_coach_front.webp",
+      "back_image": "about/main_coach_back.webp",
       "background_position":"0px 450px"
     },
     {
@@ -28,9 +28,25 @@
       "career_coach": [
         "18-19 전주 KCC 이지스 플레잉 코치"
       ],
-      "image": "about/main_coach.png",
-      "back_image": "about/main_coach_back.png",
+      "image": "about/sub_coach_front.webp",
+      "back_image": "about/rere.webp",
       "background_position":"-300px 450px"
+    },
+    {
+      "name": "서문세찬",
+      "sub_name": "Seomoon Sechan",
+      "position": "SUB COACH",
+      "career_player": [
+        "09-20, KBL 프로 농구선수 활동",
+        "2010, KBL 베스트5 수상",
+        "2013, KBL 어시스트상 수상"
+      ],
+      "career_coach": [
+        "18-19 전주 KCC 이지스 플레잉 코치"
+      ],
+      "image": "about/sub_coach2_front.webp",
+      "back_image": "about/test4.webp",
+      "background_position":"0px 450px"
     }
   ],
   "staff": [

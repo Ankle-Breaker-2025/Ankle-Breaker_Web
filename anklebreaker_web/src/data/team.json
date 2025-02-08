@@ -1,47 +1,107 @@
 {
-  "U18": {
+  "Adult": {
+    "players": [
+      { "name": "박성수", "number": 2, "position": "-" },
+      { "name": "손연우", "number": 3, "position": "SF" },
+      { "name": "정제훈", "number": 4, "position": "PG" },
+      { "name": "김준기", "number": 5, "position": "F" },
+      { "name": "이대환", "number": 8, "position": "SF" },
+      { "name": "도경윤", "number": 10, "position": "F" },
+      { "name": "강지석", "number": 14, "position": "SG" },
+      { "name": "이지훈", "number": 15, "position": "-" },
+      { "name": "이규섭", "number": 21, "position": "F" },
+      { "name": "서민성", "number": 24, "position": "SF" },
+      { "name": "송동환", "number": 30, "position": "-" },
+      { "name": "김동찬", "number": 37, "position": "-" },
+      { "name": "정용희", "number": 98, "position": "G" },
+      { "name": "정승훈", "number": 0, "position": "PG" },
+      { "name": "윤동헌", "number": 1, "position": "-" },
+      { "name": "한경서", "number": 6, "position": "G" }
+    ],
+    "pictures": [],
+    "matches": [],
+    "achievements": []
+  },
+  "Adult-Woman": {
     "players": [],
+    "pictures": [],
+    "matches": [],
+    "achievements": []
+  },
+  "U18": {
+    "players": [
+      { "name": "Kyle", "number": 2, "position": "-" },
+      { "name": "함민준", "number": 2, "position": "-" },
+      { "name": "김재현", "number": 6, "position": "-" },
+      { "name": "송연서", "number": 7, "position": "-" },
+      { "name": "김종훈", "number": 11, "position": "-" },
+      { "name": "정찬우", "number": 13, "position": "-" },
+      { "name": "양시경", "number": 30, "position": "-" },
+      { "name": "문석현", "number": 41, "position": "-" }
+    ],
     "pictures": [],
     "matches": [],
     "achievements": []
   },
   "U15": {
     "players": [
-      { "name": "김재현", "number": 6, "position": "PG" },
-      { "name": "문석현", "number": 41, "position": "PG" },
-      { "name": "송연서", "number": 9, "position": "PG" },
-      { "name": "박은철", "number": 0, "position": "PG" },
-      { "name": "정찬우", "number": 13, "position": "PG" },
-      { "name": "조연우", "number": 22, "position": "PG" },
-      { "name": "최대현", "number": 33, "position": "PG" }
+      { "name": "김수열", "number": 1, "position": "-" },
+      { "name": "Ace", "number": 3, "position": "-" },
+      { "name": "Connor W", "number": 4, "position": "-" },
+      { "name": "김재준", "number": 7, "position": "-" },
+      { "name": "안예준", "number": 8, "position": "-" },
+      { "name": "Andrik", "number": 9, "position": "-" },
+      { "name": "박은철", "number": 10, "position": "-" },
+      { "name": "Lawson", "number": 11, "position": "-" },
+      { "name": "Daniel", "number": 15, "position": "-" },
+      { "name": "송이수", "number": 22, "position": "-" },
+      { "name": "조연우", "number": 22, "position": "-" },
+      { "name": "문예준", "number": 23, "position": "-" },
+      { "name": "김정한", "number": 30, "position": "-" },
+      { "name": "Connor", "number": 33, "position": "-" }
     ],
-    "pictures": [
-      "team/U15/U15_1.webp",
-      "team/U15/U15_2.webp",
-      "team/U15/U15_3.webp",
-      "team/U15/U15_4.webp"
-    ],
+    "pictures": [],
     "matches": [
       {
-        "datetime": "2024. 12. 25 14:00",
-        "location": "전태풍 앵클브레이커 체육관",
-        "match": "크리스마스 청소년 농구대회"
+        "datetime": "2025. 2. 14",
+        "location": "청심국제청소년수련원",
+        "match": "스테이챌린지 농구대회"
       }
     ],
-    "achievements": [
-      { "datetime": "2024. 12. 25", "match": "최고 멋있는 팀에게 주는 상" },
-      { "datetime": "2024. 12. 25", "match": "최고 잘한 팀에게 주는 상" }
-    ]
+    "achievements": []
   },
   "U12": {
-    "players": [],
+    "players": [
+      { "name": "Hugh", "number": 6, "position": "-" },
+      { "name": "Hollis", "number": 7, "position": "-" },
+      { "name": "Ryan", "number": 10, "position": "-" },
+      { "name": "Klay", "number": 11, "position": "-" },
+      { "name": "이하진", "number": 30, "position": "-" },
+      { "name": "유주환", "number": 38, "position": "-" },
+      { "name": "이시영", "number": 0, "position": "-" }
+    ],
     "pictures": [],
     "matches": [],
     "achievements": []
   },
   "U10": {
-    "players": [],
-    "pictures": [],
+    "players": [
+      { "name": "Charlotte", "number": 2, "position": "-" },
+      { "name": "Malia", "number": 3, "position": "-" },
+      { "name": "Gowoon", "number": 6, "position": "-" },
+      { "name": "Jenna", "number": 7, "position": "-" },
+      { "name": "Gibbeum", "number": 10, "position": "-" },
+      { "name": "Sky", "number": 11, "position": "-" },
+      { "name": "Elizabeth", "number": 11, "position": "-" },
+      { "name": "Scarlett", "number": 13, "position": "-" },
+      { "name": "Kailee", "number": 24, "position": "-" },
+      { "name": "Saida", "number": 37, "position": "-" }
+    ],
+    "pictures": [
+      "team/U10/앵클14.webp",
+      "team/U10/앵클15.webp",
+      "team/U10/앵클9-서은.webp"
+    ],
     "matches": [],
     "achievements": []
   }
