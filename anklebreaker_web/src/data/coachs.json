@@ -46,7 +46,7 @@
       ],
       "image": "about/sub_coach2_front.webp",
       "back_image": "about/test4.webp",
-      "background_position":"0px 450px"
+      "background_position":"-400px 450px"
     }
   ],
   "staff": [
