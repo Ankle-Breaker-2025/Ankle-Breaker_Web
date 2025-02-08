@@ -49,9 +49,9 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
     if (isMobile) {
       const diff = touchStart - touchEnd;
   
-      if (diff > 50) {
+      if (diff > 500) {
         handleNavigate('next');
-      } else if (diff < -50) {
+      } else if (diff < -200) {
         handleNavigate('prev');
       }
     }
