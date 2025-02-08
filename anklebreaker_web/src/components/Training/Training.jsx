@@ -70,7 +70,7 @@ function Training() {
       </div>
 
       <div className="timetable">
-        <img src={`${import.meta.env.VITE_BUCKET_URL}/training/timetable.webp`} alt="timetable"/>
+        <img src={`${import.meta.env.VITE_BUCKET_URL}/training/new_time_table.webp`} alt="timetable"/>
       </div>
 
       <Modal

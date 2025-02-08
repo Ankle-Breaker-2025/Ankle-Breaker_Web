@@ -21,7 +21,7 @@ function Team() {
 
   useEffect(() => {
     const url = isMobile
-      ? `${bucketUrl}/team/team_banner_mobile.webp`
+      ? `${bucketUrl}/team/team_banner.webp`
       : `${bucketUrl}/team/team_banner.webp`;
 
       setBannerUrl(url);

@@ -26,8 +26,8 @@ function Home() {
   // 배너 이미지 동적 URL 설정
   useEffect(() => {
     const url = isMobile
-      ? `${bucketUrl}/home/home_banner_mobile.webp` // 모바일용 배너
-      : `${bucketUrl}/home/home_banner.webp`; // 데스크톱용 배너
+      ? `${bucketUrl}/home/home_banner_web.webp` // 모바일용 배너
+      : `${bucketUrl}/home/home_banner_web.webp`; // 데스크톱용 배너
 
     setBannerUrl(url);
   }, [isMobile, bucketUrl]);

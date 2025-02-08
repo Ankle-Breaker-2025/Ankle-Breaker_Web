@@ -8,6 +8,7 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
   const [currentLevelIndex, setCurrentLevelIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const isMobile = window.innerWidth <= 450;
 
   // levels가 변경 시 초기화
   useEffect(() => {
@@ -38,19 +39,21 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
 
   // 터치 시작 지점 저장
   const handleTouchStart = (e) => {
-    setTouchStart(e.touches[0].clientX);
+    if (isMobile) {
+      setTouchStart(e.touches[0].clientX);
+    }
   };
 
   // 터치 종료 지점 저장 및 방향 판단
   const handleTouchEnd = () => {
-    const diff = touchStart - touchEnd;
-
-    if (diff > 50) {
-      // 왼쪽 → 다음 난이도
-      handleNavigate('next');
-    } else if (diff < -50) {
-      // 오른쪽 → 이전 난이도
-      handleNavigate('prev');
+    if (isMobile) {
+      const diff = touchStart - touchEnd;
+  
+      if (diff > 50) {
+        handleNavigate('next');
+      } else if (diff < -50) {
+        handleNavigate('prev');
+      }
     }
   };
 
@@ -76,10 +79,12 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
           handleNavigate('prev');
         }}
       >
-        <span className="material-symbols-rounded">chevron_left</span><br />
+        <span className={`material-symbols-rounded ${currentLevelIndex === 0 ? 'hidden' : ''}`}>chevron_left</span><br />
         더 낮은 난이도<br />
         보러가기
       </button>
+
+      <div className="mobile-description">슬라이드하여 난이도를 선택해주세요.</div>
 
       <div
         className="modal-container"
@@ -109,17 +114,20 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
             </div>
             <div>
               <span>수업시간 : </span>
-              {currentLevel?.details.schedule
-                .map((item) => `매주 ${item.day} ${item.time}`)
-                .join(' / ')}
+              {currentLevel?.details.schedule?.length
+                ? currentLevel.details.schedule
+                    .map((item) => `매주 ${item.day} ${item.time}`)
+                    .join(' / ')
+                : "시간 조정 가능"}
             </div>
             <div>
               <span>수업비 : </span>
-              {currentLevel?.details.price[0]
+              {currentLevel?.details.price?.length
                 ? `${new Intl.NumberFormat('ko-KR').format(currentLevel.details.price[0])}원 (월 4회)`
-                : ''}
-              {currentLevel?.details.price[1] &&
-                ` / ${new Intl.NumberFormat('ko-KR').format(currentLevel.details.price[1])}원 (월 8회)`}
+                + (currentLevel.details.price[1] 
+                    ? ` / ${new Intl.NumberFormat('ko-KR').format(currentLevel.details.price[1])}원 (월 8회)` 
+                    : '')
+                : "070-7757-0909로 문의부탁드립니다."}
             </div>
           </div>
 
