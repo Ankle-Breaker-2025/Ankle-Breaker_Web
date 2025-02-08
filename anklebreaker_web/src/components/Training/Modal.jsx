@@ -84,7 +84,7 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
         보러가기
       </button>
 
-      <div className="mobile-description">슬라이드하여 난이도를 선택해주세요.</div>
+      <div className="mobile-description">좌우로 슬라이드하여 난이도를 선택해주세요.</div>
 
       <div
         className="modal-container"
@@ -137,7 +137,10 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
                 key={index}
                 src={`${bucketUrl}/training/${photo}`}
                 alt={`${currentLevel?.level} photo ${index + 1}`}
-                onClick={() => setSelectedImage(`${bucketUrl}/training/${photo}`)}
+                onClick={(e) => {
+                  e.stopPropagation(); // 이벤트 전파 방지
+                  setSelectedImage(`${bucketUrl}/training/${photo}`);
+                }}
                 style={{
                   cursor: 'pointer',
                   border: selectedImage.includes(photo) ? '2px solid red' : 'none',
