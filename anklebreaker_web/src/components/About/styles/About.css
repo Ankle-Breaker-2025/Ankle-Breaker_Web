@@ -5,6 +5,8 @@
 
 .about .section{
   padding: 30px 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about .section-title {
@@ -35,6 +37,15 @@
   margin: 30px 30px 30px 0px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .vedio-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -89,6 +100,10 @@
 
   .about .card-wrapper{
     gap:2%;
+  }
+
+  .about iframe{
+    margin: 0px 20px;
   }
 }
 
