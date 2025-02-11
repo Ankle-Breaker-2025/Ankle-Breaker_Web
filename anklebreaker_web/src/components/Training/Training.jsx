@@ -1,5 +1,5 @@
 import './styles/Training.css';
-import {useState, useRef} from 'react';
+import {useState, useRef, useEffect} from 'react';
 import trainingData from '../../data/training.json';
 import Modal from './Modal.jsx';
 
@@ -8,6 +8,25 @@ function Training() {
   const [selectedClass, setSelectedClass] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const sliderRef = useRef(null);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden'; // 배경 페이지 스크롤 막기
+      document.addEventListener('touchmove', preventScroll, { passive: false }); // 모바일 드래그 막기
+    } else {
+      document.body.style.overflow = ''; // 원래 상태로 복구
+      document.removeEventListener('touchmove', preventScroll);
+    }
+  
+    return () => {
+      document.body.style.overflow = ''; // Cleanup
+      document.removeEventListener('touchmove', preventScroll);
+    };
+  }, [isModalOpen]);
+  
+  const preventScroll = (e) => {
+    e.preventDefault(); // 터치 이벤트 차단
+  };
 
   const handleNext = () => {
     if(sliderRef.current) {
