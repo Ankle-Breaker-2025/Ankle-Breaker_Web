@@ -45,6 +45,25 @@ function About() {
           />
         </div>
       </div>
+        
+      <div className="section">
+        <div className="section-title">VEDIO</div>
+        <div className="vedio-section">
+          <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/bTW97_3AmIQ?si=77H049rWGQt8auUD"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; **fullscreen**"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+          </iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/B07k0BqBPhI?si=bY2Bo79Errt9uAoq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7DlKewM7QzA?si=KWvcbdTbR5LKUPuj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      
+
 
       <div className="section">
         <div className="section-title">GYM</div>
