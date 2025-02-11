@@ -8,16 +8,24 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
   const [currentLevelIndex, setCurrentLevelIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  const isMobile = window.innerWidth <= 450;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 450);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // levels가 변경 시 초기화
   useEffect(() => {
-    if (levels) {
-      setCurrentLevelIndex(0); // 항상 첫 번째 레벨로 초기화
-      if (levels[0]?.details?.photos?.[0]) {
-        setSelectedImage(`${bucketUrl}/training/${levels[0].details.photos[0]}`);
-      }
+    if(!levels || levels.length === 0) return;
+    
+    setCurrentLevelIndex(0); // 항상 첫 번째 레벨로 초기화
+    
+    if (levels[0]?.details?.photos?.[0]) {
+      setSelectedImage(`${bucketUrl}/training/${levels[0].details.photos[0]}`);
     }
+    
   }, [levels]);
 
   // 이미지 업데이트
@@ -41,17 +49,20 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
   const handleTouchStart = (e) => {
     if (isMobile) {
       setTouchStart(e.touches[0].clientX);
+      setTouchEnd(null);
     }
   };
 
   // 터치 종료 지점 저장 및 방향 판단
   const handleTouchEnd = () => {
-    if (isMobile) {
+    if (isMobile && touchEnd !== null) {
       const diff = touchStart - touchEnd;
+
+      if (Math.abs(diff) < 10) return;
   
-      if (diff > 500) {
+      if (diff > 50) {
         handleNavigate('next');
-      } else if (diff < -200) {
+      } else if (diff < -50) {
         handleNavigate('prev');
       }
     }
@@ -59,7 +70,9 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
 
   // 터치 이동 지점 추적
   const handleTouchMove = (e) => {
-    setTouchEnd(e.touches[0].clientX);
+    if(isMobile){
+      setTouchEnd(e.touches[0].clientX);
+    }
   };
 
   const currentLevel = levels[currentLevelIndex];
@@ -95,7 +108,10 @@ function Modal({ isOpen, onClose, className, classEngName, levels }) {
           backgroundPosition: 'center',
         }}
       >
-        <button className="close-button" onClick={onClose}>
+        <button
+          className="close-button"
+          onClick={(e) => { e.stopPropagation(); onClose(); }}
+        >
           &times;
         </button>
 
