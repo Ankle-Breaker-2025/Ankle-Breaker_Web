@@ -38,6 +38,7 @@
 
 .home .banner-content {
   position: relative;
+  top: 60px;
   z-index: 2;
   width: 100%;
   font-family: "Bebas Neue", sans-serif;

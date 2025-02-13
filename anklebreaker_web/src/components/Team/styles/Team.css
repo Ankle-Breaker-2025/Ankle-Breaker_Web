@@ -44,7 +44,8 @@
   box-sizing: border-box;
 }
 
-.team-list h2{
+.team h2{
+  margin: 50px 0px 0px 0px;
   font-size: 25px;
   font-weight: 800;
 }

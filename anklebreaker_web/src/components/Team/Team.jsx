@@ -51,9 +51,30 @@ function Team() {
         ))}
       </div>
 
+      {/* 팀 사진 */}
+      <h2>{selectedTeam} 선수단</h2>
+      <div className="team-pic">
+        {teamData[selectedTeam].pictures.length > 0 ? (
+          <div className="image-slider">
+            <div className="images" ref={sliderRef}>
+              {teamData[selectedTeam].pictures.map((src, index) => (
+                <img key={index} src={`${bucketUrl}/${src}`} alt={`${selectedTeam} 이미지-${index + 1}`} />
+              ))}
+            </div>
+            <div className="buttons">
+              <button className="prev" onClick={handlePrev}>
+                <span className="material-symbols-rounded">chevron_left</span>
+              </button>
+              <button className="next" onClick={handleNext}>
+                <span className="material-symbols-rounded">chevron_right</span>
+              </button>
+          </div>
+        </div>
+        ) : null }
+      </div>
+
       {/* 팀 리스트 */}
       <div className="team-list">
-        <h2>{selectedTeam} 선수단</h2>
         {teamData[selectedTeam].players.length > 0 ? (
           <div className="player-list">
             {teamData[selectedTeam].players.map((player, index) => (
@@ -115,26 +136,7 @@ function Team() {
         </div>
       </div>
 
-      {/* 팀 사진 */}
-      <div className="team-pic">
-        {teamData[selectedTeam].pictures.length > 0 ? (
-          <div className="image-slider">
-            <div className="images" ref={sliderRef}>
-              {teamData[selectedTeam].pictures.map((src, index) => (
-                <img key={index} src={`${bucketUrl}/${src}`} alt={`${selectedTeam} 이미지-${index + 1}`} />
-              ))}
-            </div>
-            <div className="buttons">
-              <button className="prev" onClick={handlePrev}>
-                <span className="material-symbols-rounded">chevron_left</span>
-              </button>
-              <button className="next" onClick={handleNext}>
-                <span className="material-symbols-rounded">chevron_right</span>
-              </button>
-          </div>
-        </div>
-        ) : null }
-      </div>
+      
     </div>
   )
 }

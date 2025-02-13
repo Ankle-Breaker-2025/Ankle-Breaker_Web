@@ -47,7 +47,7 @@ function About() {
       </div>
         
       <div className="section">
-        <div className="section-title">VEDIO</div>
+        <div className="section-title">VIDEO</div>
         <div className="vedio-section">
           <iframe width="560" height="315"
               src="https://www.youtube.com/embed/bTW97_3AmIQ?si=77H049rWGQt8auUD"

@@ -11,7 +11,8 @@
         "미국 조지아주 Mr.basketball 선정"
       ],
       "career_coach": [
-        "18-19 전주 KCC 이지스 플레잉 코치"
+        "KBL 플레잉 코치 경력 2년",
+        "스킬트레이닝 코치 4년 "
       ],
       "image": "about/main_coach_front.webp",
       "back_image": "about/main_coach_back.webp",
@@ -26,7 +27,7 @@
         "마산고등학교 농구부 선수"
       ],
       "career_coach": [
-        "22-24 퀀텀 스킬트레이닝 센터 코치"
+        "스킬트레이닝 코치 3년"
       ],
       "image": "about/sub_coach_front.webp",
       "back_image": "about/rere.webp",
@@ -42,7 +43,7 @@
         "2015, FIBA U16 아시아선수권대회 우승"
       ],
       "career_coach": [
-        "안산 유소년 농구교실 코치"
+        "유소년 농구교실 코치 2년"
       ],
       "image": "about/sub_coach2_front.webp",
       "back_image": "about/test4.webp",
@@ -57,13 +58,13 @@
     },
     {
       "kor_name":"정제훈",
-      "eng_name":"Jeong Jaehoon",
+      "eng_name":"Jeong Jehoon",
       "position":"Shuttle Driver"
     },
     {
       "kor_name":"김우정",
       "eng_name":"Kim Woojeong",
-      "position":"Web/App Developer"
+      "position":"Manager"
     }
   ]
 }

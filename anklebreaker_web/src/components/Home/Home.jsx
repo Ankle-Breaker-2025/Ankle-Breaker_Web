@@ -49,7 +49,7 @@ function Home() {
         <img src={bannerUrl} alt="배너 이미지" className="banner-image"/>
         <div className="banner-content">
           <div className="slogan">FROM BASICS TO BRILLIANCE.</div>
-          <button onClick={handleNavigation} className="go-training">커리큘럼 확인하기</button>
+          <button onClick={handleNavigation} className="go-training">수업 확인하기</button>
         </div>
       </div>
 

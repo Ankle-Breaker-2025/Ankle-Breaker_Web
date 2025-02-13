@@ -60,7 +60,15 @@
       { "name": "김정한", "number": 30, "position": "-" },
       { "name": "Connor", "number": 33, "position": "-" }
     ],
-    "pictures": [],
+    "pictures": [
+      "team/U15/1.webp",
+      "team/U15/2.webp",
+      "team/U15/3.webp",
+      "team/U15/4.webp",
+      "team/U15/5.webp",
+      "team/U15/6.webp",
+      "team/U15/7.webp"
+    ],
     "matches": [
       {
         "datetime": "2025. 2. 14",
@@ -98,9 +106,9 @@
       { "name": "Saida", "number": 37, "position": "-" }
     ],
     "pictures": [
+      "team/U10/앵클9-서은.webp",
       "team/U10/앵클14.webp",
-      "team/U10/앵클15.webp",
-      "team/U10/앵클9-서은.webp"
+      "team/U10/앵클15.webp"
     ],
     "matches": [],
     "achievements": []
