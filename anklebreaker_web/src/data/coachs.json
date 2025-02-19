@@ -52,19 +52,19 @@
   ],
   "staff": [
     {
-      "kor_name":"미나",
+      "kor_name":"지미나",
       "eng_name":"Jane Turner",
-      "position":"Director"
+      "position":"원장 / Director"
     },
     {
       "kor_name":"정제훈",
       "eng_name":"Jeong Jehoon",
-      "position":"Shuttle Driver"
+      "position":"셔틀 기사 / Shuttle Driver"
     },
     {
       "kor_name":"김우정",
       "eng_name":"Kim Woojeong",
-      "position":"Manager"
+      "position":"매니저 / Manager"
     }
   ]
 }
