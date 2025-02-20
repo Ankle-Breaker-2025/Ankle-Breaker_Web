@@ -74,7 +74,7 @@ function Team() {
       </div>
 
       {/* 팀 리스트 */}
-      <div className="team-list">
+      {/* <div className="team-list">
         {teamData[selectedTeam].players.length > 0 ? (
           <div className="player-list">
             {teamData[selectedTeam].players.map((player, index) => (
@@ -87,7 +87,7 @@ function Team() {
         ) : (
           <p>해당하는 선수단이 없습니다.</p>
         )}
-      </div>
+      </div> */}
 
       {/* 팀 경기정보 */}
       <div

@@ -61,21 +61,15 @@
       { "name": "Connor", "number": 33, "position": "-" }
     ],
     "pictures": [
-      "team/U15/1.webp",
-      "team/U15/2.webp",
       "team/U15/3.webp",
       "team/U15/4.webp",
       "team/U15/5.webp",
       "team/U15/6.webp",
-      "team/U15/7.webp"
+      "team/U15/7.webp",
+      "team/U15/1.webp",
+      "team/U15/2.webp"
     ],
-    "matches": [
-      {
-        "datetime": "2025. 2. 14",
-        "location": "청심국제청소년수련원",
-        "match": "스테이챌린지 농구대회"
-      }
-    ],
+    "matches": [],
     "achievements": []
   },
   "U12": {
