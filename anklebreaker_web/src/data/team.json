@@ -19,8 +19,14 @@
       { "name": "한경서", "number": 6, "position": "G" }
     ],
     "pictures": [],
-    "matches": [],
-    "achievements": []
+    "matches": [
+      {"match":"수원시농구협회장배 비등록 농구대회", "datetime":"2025/3/16", "location":"L137 GROUND체육관"},
+      {"match":"금천구 농구협회장배 농구대회", "datetime":"2025/3/30", "location":"금천구민문화체육센터"},
+      {"match":"하!태 스테이챌린지 농구대회", "datetime":"2025/4/19", "location":"청심국제청소년수련원"}
+    ],
+    "achievements": [
+      {"match":"2025 수원시농구협회장배 농구대회 3위", "datetime":"2025/2/23"}
+    ]
   },
   "Adult-Woman": {
     "players": [],
