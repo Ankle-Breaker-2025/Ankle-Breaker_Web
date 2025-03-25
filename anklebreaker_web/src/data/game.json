@@ -1,0 +1,11 @@
+{
+  "steps":[
+    {"step":"1. 픽업 오픈채팅방에 참여한다.", "image":"pickup_step1.webp"},
+    {"step":"2. 바스탯(Bastat)앱에 로그인한다.", "image":"pickup_step2.webp"},
+    {"step":"3. 하단 마이팀 탭에서 앵클브레이커를 선택한다.", "image":"pickup_step3.webp"},
+    {"step":"4. 픽업 게임 탭을 선택한다.", "image":"pickup_step4.webp"},
+    {"step":"5. 픽업 게임 시간을 선택한다.", "image":"pickup_step5.webp"},
+    {"step":"6. 참가 신청 버튼을 누른다.", "image":"pickup_step6.webp"},
+    {"step":"7. 필요한 정보를 입력 후 참가 신청한다.", "image":"pickup_step7.webp"}
+  ]
+}
