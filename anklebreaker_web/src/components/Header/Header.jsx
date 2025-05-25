@@ -34,7 +34,7 @@ function Header() {
         <NavLink to="/team" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Team</NavLink>
         <NavLink to="/training" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Training</NavLink>
         <NavLink to="/store" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Store</NavLink>
-        <NavLink to="/pickup" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Game</NavLink>
+        {/* <NavLink to="/pickup" className={({ isActive }) => isActive ? "active" : ""} onClick={closeMenu}>Game</NavLink> */}
       </nav>
     </div>
   )

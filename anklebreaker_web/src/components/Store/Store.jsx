@@ -13,7 +13,7 @@ function Store() {
           <div key={index} className="uniform-card">
             <img src={`${bucketUrl}/store/${uniform.image}`} alt="uniform-image"/>
             <div className="uniform-name">{uniform.name}</div>
-            <div className="uniform-price">{new Intl.NumberFormat('ko-KR').format(uniform.price)}원</div>
+            {/* <div className="uniform-price">{new Intl.NumberFormat('ko-KR').format(uniform.price)}원</div> */}
           </div>
         ))}
       </div>

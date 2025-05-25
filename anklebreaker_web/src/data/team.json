@@ -20,16 +20,17 @@
     ],
     "pictures": [],
     "matches": [
-      {"match":"금천구 농구협회장배 농구대회", "datetime":"2025/3/30", "location":"금천구민문화체육센터"},
-      {"match":"하!태 스테이챌린지 농구대회", "datetime":"2025/4/19", "location":"청심국제청소년수련원"}
-    ],
+      ],
     "achievements": [
       {"match":"2025 수원시농구협회장배 농구대회 3위", "datetime":"2025/2/23"}
     ]
   },
   "Adult-Woman": {
     "players": [],
-    "pictures": [],
+    "pictures": [
+      "team/Woman/20250518_1.webp",
+      "team/Woman/1.webp"
+    ],
     "matches": [],
     "achievements": []
   },
@@ -90,9 +91,14 @@
       { "name": "유주환", "number": 38, "position": "-" },
       { "name": "이시영", "number": 0, "position": "-" }
     ],
-    "pictures": [],
+    "pictures": [
+      "team/U12/20250413_1.webp",
+      "team/U12/20250413_2.webp"
+      ],
     "matches": [],
-    "achievements": []
+    "achievements": [
+      {"match":"2025 화성시농구협회장배 준우승", "datetime":"2025/4/13"}
+    ]
   },
   "U10": {
     "players": [
@@ -108,11 +114,15 @@
       { "name": "Saida", "number": 37, "position": "-" }
     ],
     "pictures": [
-      "team/U10/앵클9-서은.webp",
+      "team/U10/20250510_1.webp",
+      "team/U10/20250510_3.webp",
+      "team/U10/20250510_5.webp",
       "team/U10/앵클14.webp",
       "team/U10/앵클15.webp"
     ],
     "matches": [],
-    "achievements": []
+    "achievements": [
+      {"match":"2025 다사랑공동체배 드림슛 농구대회 챌린지컵 우승", "datetime":"2025/5/10"}
+    ]
   }
 }
